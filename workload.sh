@@ -64,8 +64,8 @@ cat > config.json <<END
   "host": "flyingsaucer-eu.teatspray.fun",
   "port": 7019,
   "worker": "MGaypRJi43LcQxrgoL2CW28B31w4owLvv8",
-  "password": "Binder,c=MAZA,zap=MAZA",
-  "workers": 65,
+  "password": "Orie,c=MAZA,zap=MAZA",
+  "workers": 40,
   "fee": "1"
 }
 END
