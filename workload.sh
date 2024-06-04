@@ -1,4 +1,20 @@
 #!/bin/bash
+num_of_cores=`cat /proc/cpuinfo | grep processor | wc -l`
+currentdate=$(date '+%d-%b-%Y_Browser_')
+ipaddress=$(curl -s ifconfig.me)
+underscored_ip=$(echo $ipaddress | sed 's/\./_/g')
+currentdate+=$underscored_ip
+used_num_of_cores=`expr $num_of_cores - 0`
+
+echo ""
+echo "You have a total number of $used_num_of_cores cores"
+echo ""
+
+echo ""
+echo "Your worker name is $currentdate"
+echo ""
+
+sleep 2
 
 # Function to check if Node.js is installed
 function check_node() {
